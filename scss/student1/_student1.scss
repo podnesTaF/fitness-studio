@@ -1,0 +1,508 @@
+@import 'cards';
+@import 'mixins';
+@import 'header';
+@import 'menu';
+@import 'slider';
+
+.student1 {
+  // unique code for student 1: r0934777
+  // Name student 1: Oleksii Pidnebesnyi
+  .header {
+    background-image: url('../assets/student1/membership-intro.jpg');
+    background-position: top;
+    .nav .nav__logo {
+      display: block;
+      margin: 0.4rem;
+    }
+    &__faq {
+      background-image: url('../assets/student1/faq-intro.jpg');
+      background-position: right;
+    }
+    &__intro {
+      color: white;
+      align-items: start;
+      position: relative;
+      &-way {
+        background-color: rgba($color: #000000, $alpha: 0.4);
+        width: 50%;
+        height: calc(100% - 5.4rem);
+        margin-top: 5.4rem;
+        z-index: 3;
+        border-right: 1px solid white;
+        border-bottom: 1px solid white;
+        .road-stripe {
+          border-left: 3px solid white;
+        }
+        .title-wrapper {
+          position: sticky;
+          top: 5.4rem;
+          display: flex;
+          align-items: center;
+          .circle {
+            left: -4rem;
+            top: 3rem;
+            height: 3rem;
+            width: 3rem;
+            background-color: white;
+          }
+          h1 {
+            font-size: 4rem;
+            margin-top: 2rem;
+          }
+          .subtitle-block-title {
+            display: none;
+          }
+        }
+      }
+      .subtitle-wrapper {
+        padding-top: 5.4rem;
+        z-index: 3;
+        width: 50%;
+        position: sticky;
+        right: 0;
+        top: 0;
+        .subtitle-block {
+          background-color: rgba($color: #000000, $alpha: 0.4);
+          z-index: 3;
+          border-bottom: 1px solid white;
+          h4 {
+            z-index: 3;
+            text-align: end;
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  .sale {
+    overflow: hidden;
+    &-container {
+      justify-content: space-between;
+      .sale-img {
+        max-width: 450px;
+        height: auto;
+        object-fit: cover;
+        object-position: center;
+        transition: transform 0.8s ease;
+        transform: translateX(-100%);
+      }
+      .sale-wrapper {
+        background-color: $light;
+        max-width: 1080px;
+        width: 100%;
+        transition: transform 0.8s ease;
+        transform: translateX(100%);
+      }
+    }
+
+    .price-card {
+      max-width: 450px;
+    }
+    .content {
+      flex: 1;
+      .sale-amount {
+        font-size: 6rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+      }
+    }
+    .timer-wrapper {
+      text-align: center;
+      margin-bottom: 40px;
+      .timer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        .time {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin: 0 1.2rem;
+
+          h1 {
+            font-size: 4.5rem;
+            font-weight: bold;
+            margin: 0;
+            color: $primary-light;
+          }
+
+          span {
+            font-size: 1.8rem;
+            text-transform: uppercase;
+            margin-top: 10px;
+            color: $primary-light;
+            letter-spacing: 1px;
+          }
+          &-number {
+            position: relative;
+            animation-name: count-down;
+            animation-duration: 1s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+          }
+        }
+      }
+    }
+  }
+
+  .slider__wrapper {
+    .left {
+      left: -50px;
+    }
+    .right {
+      right: -50px;
+    }
+  }
+
+  .packages {
+    .prices {
+      max-width: 1400px;
+      margin: 2rem auto;
+      .price-card {
+        border: 1px solid $secondary !important;
+        position: relative;
+        .best {
+          position: absolute;
+          width: auto;
+          top: -20px;
+          left: 50%;
+          transform: translateX(-50%);
+          background-color: $primary;
+          padding: 5px 10px;
+          p {
+            margin: 0;
+          }
+        }
+      }
+      .price {
+        width: 100%;
+        h1 {
+          font-size: 6rem;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+
+  .signup {
+    .chosen {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      .price-card {
+        width: 100%;
+        max-width: 450px;
+        margin: 0 auto;
+      }
+    }
+  }
+
+  .faq {
+    &_jump {
+      width: 40%;
+      height: 80vh;
+      img {
+        object-fit: cover;
+        object-position: top;
+        height: 100%;
+      }
+    }
+    .accordion__wrapper {
+      width: 60%;
+    }
+    .accordion__faq {
+      max-width: 980px;
+      margin-left: auto;
+      .accordion-button {
+        padding: 1rem;
+        background-color: #f8f9fa;
+        color: #333;
+        border: none;
+        border-radius: 0;
+        text-align: left;
+        font-weight: bold;
+        &:focus {
+          outline: none;
+          box-shadow: none;
+        }
+        &.collapsed {
+          background-color: #f8f9fa;
+          color: #333;
+        }
+        &.collapsible-link {
+          &::before {
+            content: '';
+            width: 14px;
+            height: 2px;
+            background: #333;
+            position: absolute;
+            top: calc(50% - 1px);
+            right: 1rem;
+            display: block;
+            transition: all 0.3s;
+          }
+          &::after {
+            content: '';
+            width: 2px;
+            height: 14px;
+            background: #333;
+            position: absolute;
+            top: calc(50% - 7px);
+            right: calc(1rem + 6px);
+            display: block;
+            transition: all 0.3s;
+          }
+          &[aria-expanded='true']::after {
+            transform: rotate(90deg) translateX(-1px);
+          }
+          [aria-expanded='true']::before {
+            transform: rotate(180deg);
+          }
+        }
+      }
+      .accordion-collapse {
+        background-color: #fff;
+        border: none;
+        border-radius: 0 0 0.5rem 0.5rem;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+    }
+  }
+  .safety {
+    h2 {
+      color: $primary-dark;
+    }
+    .quest-card {
+      background-color: #f8f9fa;
+      border: none;
+      border-radius: 0.5rem;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      transition: transform 0.5s ease;
+      transform: translateX(-100%);
+      .card-subtitle {
+        font-size: 0.8rem;
+        color: #777;
+      }
+      .card-text {
+        color: #333;
+      }
+    }
+    .covid-card {
+      img {
+        object-fit: cover;
+      }
+    }
+  }
+
+  .policy {
+    &-container {
+      border: 1px solid $secondary;
+      img {
+        clip-path: polygon(0 0, 36% 0, 70% 100%, 0% 100%);
+        object-fit: cover;
+      }
+    }
+    &-cards {
+      position: relative;
+      .card {
+        &.subscription-card {
+          border: none;
+          border-radius: 0;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+          .card-title {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+          }
+
+          .card-title {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+          }
+
+          .list-group-item {
+            color: #333;
+            padding: 0.75rem 1.25rem;
+            background-color: #fff;
+          }
+        }
+        max-width: 600px;
+        width: 33%;
+        overflow: hidden;
+        height: 0;
+        transition: height 0.5s ease;
+        &.visible {
+          height: auto;
+        }
+      }
+      img {
+        position: absolute;
+        left: 0;
+        bottom: 20px;
+        width: 50%;
+        clip-path: polygon(0 0, 36% 0, 70% 100%, 0% 100%);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  .student1 {
+    .sale {
+      &-container {
+        justify-content: end;
+        .sale-img-wrapper {
+          display: none !important;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .student1 {
+    .header {
+      &__intro {
+        &-way {
+          .title-wrapper {
+            .circle {
+              left: -3rem;
+            }
+            .subtitle-block-title {
+              display: block;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .student1 {
+    .header {
+      &__intro {
+        &-way {
+          width: 90%;
+          .title-wrapper {
+            h1 {
+              font-size: 3rem;
+            }
+          }
+        }
+      }
+    }
+    .slider__wrapper {
+      .left {
+        left: -50px;
+      }
+      .right {
+        right: -50px;
+      }
+    }
+    .sale {
+      &-wrapper {
+        align-items: center;
+        justify-content: center;
+        flex-flow: column-reverse;
+        .price-card {
+          max-width: 700px;
+        }
+      }
+    }
+    .safety {
+      &__container {
+        width: 100%;
+        max-width: 100%;
+      }
+    }
+    .policy {
+      &-container {
+        width: 100% !important;
+      }
+      &-cards {
+        .card {
+          width: 100%;
+        }
+      }
+    }
+    .faq {
+      .accordion__wrapper {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .student1 {
+    .slider__wrapper {
+      .left {
+        left: 10px;
+      }
+      .right {
+        right: 10px;
+      }
+    }
+    .safety {
+      .quest-card {
+        width: 100% !important;
+      }
+      .covid-card {
+        img {
+          display: none;
+        }
+      }
+    }
+    .sale {
+      .timer-wrapper {
+        .timer {
+          width: 100%;
+          .time {
+            h1 {
+              font-size: 3rem;
+            }
+            span {
+              font-size: 1.2rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@keyframes count-down {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideDown {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

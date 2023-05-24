@@ -1,0 +1,195 @@
+.student3 {
+  // unique code for student 3
+  // Name student 3: Kostas Viltrakis
+ // kostas-branch
+  .header {
+    background-image: url("../assets/student3/BlogBanner.jpg");
+
+    &__Contact {
+      background-image: url("../assets/student3/Contact1.jpg");
+    }
+    &__header__intro{
+      color: white;
+      align-items: first;
+    }
+    h1{
+      color: white;
+      font-size: 4.5rem;
+    }
+    .header-text{
+      align-content: center;
+    }
+  }
+
+  .featured {
+
+    .container {
+      margin-top: 50px;
+      .row {
+        display: flex;
+        align-items: stretch;
+        .bg-dark {
+          padding: 30px;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+        }
+        img {
+          height: auto;
+          width: 100%;
+          object-fit: cover;
+        }
+      }
+      @media (min-width: 1080px){
+        .height{
+          min-height: 320px;
+        }
+
+      }
+      h5{
+        color: #7EBDC2;
+      }
+
+    }
+
+
+
+  }
+
+  .insights{
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+    h1{
+      margin-left: 11rem;
+      font-weight: bold;
+      //border-bottom: 3px solid #7EBDC2;
+      //width: 100%;
+    }
+    //.line1 {
+    //  border: none;
+    //  border-top: 3px solid #7EBDC2;
+    //  width: 520px;
+    //  margin-left: 9rem;
+    //
+    //}
+    //.line2 {
+    //  border: none;
+    //  border-top: 3px solid #7EBDC2;
+    //  width: 520px;
+    //  margin-left: 13rem;
+    //
+    //}
+    //.line3 {
+    //  border: none;
+    //  border-top: 3px solid #7EBDC2;
+    //  width: 710px;
+    //  margin-left: 9rem;
+    //
+    //}
+    //.line4 {
+    //  border: none;
+    //  border-top: 3px solid #7EBDC2;
+    //  width: 710px;
+    //  margin-left: 13rem;
+    //
+    //}
+
+    a:hover{
+        text-decoration: none;
+        transition: text-decoration 1s ease;
+      }
+    .card {
+      color: #ffffff;
+      margin-bottom: 20px;
+      border: none;
+      .card-title, .card-text {
+        color: #ffffff;
+      }
+    }
+    .card-body{
+      background-color: #231F20;
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 30px;
+      border-bottom-left-radius: 30px;
+    }
+    .card-img-top{
+      border-top-right-radius: 0px;
+      border-top-left-radius: 0px;
+    }
+    a:hover{
+      text-decoration: none;
+    }
+    p{
+      height: 100px;
+    }
+    @media screen and (min-width: 768px) and (max-width: 992px) {
+      p{
+        height: 160px;
+      }
+    }
+
+  }
+  .contact{
+    margin-top: 5rem;
+    margin-bottom: 4rem;
+    img{
+      border: 5px solid #7EBDC2;
+      border-radius: 5px;
+      max-width: 80%;
+      margin-left: 5rem;
+    }
+    .clubs-h4{
+      font-weight: bold;
+    }
+    .line {
+      position: relative;
+      top: 0.1rem;
+      border-top: 3px solid #7EBDC2;
+
+    }
+
+    @mixin dropdown {
+      display: inline-block;
+      position: relative;
+      font-size: 16px;
+    }
+
+    .dropdown {
+      @include dropdown;
+
+
+      select {
+        appearance: none;
+        border: 2px solid #7EBDC2;
+        border-radius: 50px 50px 50px 50px;
+        background-color: #EFE6DD;
+        color: black;
+        padding: 8px 12px;
+        width: 230px;
+        height: 50px;
+        cursor: pointer;
+
+        &:focus {
+          outline: none;
+          box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+        }
+      }
+
+      &:after {
+        content: '\f107';
+        font-family: 'FontAwesome';
+        position: absolute;
+        right: 32px;
+        top: 70%;
+        transform: translateY(-50%);
+        pointer-events: none;
+      }
+    }
+
+
+  }
+}
+
+
+

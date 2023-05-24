@@ -1,0 +1,53 @@
+// override BS5 variables and add custom variables
+
+// change the 'primary' and 'danger' color and add 'purple'
+$primary: #7ebdc2;
+$primary-light: #77f1fa;
+$primary-transparent: rgba(
+  $color: $primary,
+  $alpha: 0.5,
+);
+$primary-dark: #28767B;
+
+$secondary: lightgrey;
+$danger: #f04c25;
+$purple: #800080;
+$warning: #f3fb8c;
+$dark: #231f20;
+
+$light: #EFE6DD;
+$nutri-color: #D4D952;
+
+$header-dark: rgba(0, 0, 0, 0.5);
+$header-light: #efe6dd;
+
+// override BS5 variables and custom variables mixins
+
+/*
+$theme-colors: map-merge(
+  $theme-colors,
+  (
+    'primary': #009cab,
+    'danger': #f04c25,
+    'purple': #800080,
+  )
+);
+
+// add text-justify to the 'text-align' utilities
+$utilities: map-merge(
+  $utilities,
+  (
+    'text-align': (
+      responsive: true,
+      property: text-align,
+      class: text,
+      values: (
+        start: left,
+        end: right,
+        center: center,
+        justify: justify,
+      ),
+    ),
+  )
+);
+*/

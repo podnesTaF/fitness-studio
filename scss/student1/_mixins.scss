@@ -1,0 +1,60 @@
+@mixin linkUnderline($color, $secondary-color) {
+  display: block;
+  color: white;
+  font-size: 1rem;
+  text-transform: capitalize;
+  text-align: center;
+  text-decoration: none;
+  position: relative;
+  &.active {
+    color: $secondary-color;
+    &:before {
+      background-color: $secondary-color;
+    }
+    &:after {
+      background-color: $secondary-color;
+    }
+    &:hover {
+      color: $secondary-color;
+    }
+  }
+  &.dark {
+    color: black;
+    &.active {
+      color: $primary;
+    }
+  }
+  &:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: $color;
+    transition: all 0.3s ease-out;
+    transform: translateX(-50%);
+  }
+  &:hover {
+    color: $color;
+    &:before {
+      width: 100%;
+    }
+    &:after {
+      transform-origin: left;
+      transform: scaleX(1);
+    }
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50%;
+    height: 2px;
+    background-color: $color;
+    transition: all 0.3s ease-out;
+    transform-origin: right;
+    transform: scaleX(0);
+  }
+}
