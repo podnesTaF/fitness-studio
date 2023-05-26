@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <link rel="stylesheet" href="./css/style.css">
         <title>PowerUp Fitness - Classes</title>
     </head>
@@ -15,47 +15,50 @@
                 <img src="./assets/main-logo.svg" alt="logo" class="nav__logo" />
 
                 <ul class="d-flex list-unstyled">
-                    <li class="active"><a href="/">Home</a></li>
-                    <li><a href="/about-us">About us</a></li>
-                    <li><a href="/classes">Classes</a></li>
-                    <li><a href="/personal-trainings">Personal trainings</a></li>
-                    <li><a href="/blog">Blog</a></li>
-                    <li><a href="/contact-us">Contact us</a></li>
-                    <li><a href="/membership">Membership</a></li>
-                    <li><a href="/faq">Faq</a></li>
+                    <li ><a href="./index.html">Home</a></li>
+                    <li ><a href="./classes.html">Classes</a></li>
+                    <li class="active"><a href="./personal-trainings.html">Personal trainings</a></li>
+                    <li><a href="./blog.html">Blog</a></li>
+                    <li><a href="./membership.html">Membership</a></li>
+                    <li><a href="./testimonials.html">Testimonials</a></li>
+                    <li><a href="./contact-us.html">Contact us</a></li>
+                    <li><a href="./faq.html">FAQ</a></li>
                 </ul>
+                <div class="burger-icon">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
             </nav>
             <article class="header__intro">
                 <div class="container">
-                    <div class="row align-items-center">
-                        <div class="col text-start">
-                            <h2 class="text-white">CLASSES</h2>
+                    <div class="row align-items-center ">
+                        <div class="col text-start custom-z-index">
+                            <h1 class="text-white">Trainings</h1>
                         </div>
-                        <div class="col text-end">
-                            <h2 class="text-white">GROUP LESSONS</h2>
+                        <div class="col text-end custom-z-index">
+                            <h1 class="text-white">Personal Trainings</h1>
                         </div>
                     </div>
                 </div>
             </article>
             <div class="overlay"></div>
         </header>
-        <main>
-            <section class="trainers">
+        <main class="overflow-hidden">
+            <section class="trainers center-align">
                 <div class="container">
-                    <h2 class="text-left">OUR PERSONAL TRAINERS</h2>
+                    <h2>OUR PERSONAL TRAINERS</h2>
                     <div class="row">
-                        <div class="col-md-6">
+                        <div class="col-md-6 p-2 p-sm-0">
                             <img src="./assets/student2/pexels-ron-lach-8745179.jpg" alt="Abel Tesfaye" class="img-fluid">
-                            <h3 class="text-center">Abel Tesfaye</h3>
-                            <div class="text-center">
-                                <button class="contact-btn" data-bs-toggle="modal" data-bs-target="#trainer1Modal">CONTACT &#8594;</button>
+                            <h3 class="center-align">Abel Tesfaye</h3>
+                            <div class="center-align">
+                                <button class="btn" data-bs-toggle="modal" data-bs-target="#trainer1Modal">CONTACT &#8594;</button>
                             </div>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-6 p-2 p-sm-0">
                             <img src="./assets/student2/pexels-cliff-booth-4056610.jpg" alt="Taylor Swift" class="img-fluid">
-                            <h3 class="text-center">Taylor Swift</h3>
-                            <div class="text-center">
-                                <button class="contact-btn" data-bs-toggle="modal" data-bs-target="#trainer2Modal">CONTACT &#8594;</button>
+                            <h3 class="center-align">Taylor Swift</h3>
+                            <div class="center-align">
+                                <button class="btn" data-bs-toggle="modal" data-bs-target="#trainer2Modal">CONTACT &#8594;</button>
                             </div>
                         </div>
                     </div>
@@ -64,7 +67,7 @@
 
             <section class="workouts">
                 <div class="container">
-                    <div class="row align-items-center">
+                    <div class="row align-items-center" data-aos="fade-right">
                         <div class="col-md-6">
                             <h3>Personal Trainers</h3>
                             <p>Do you have a goal in mind? And do you need help and guidance to achieve that goal? They each have their own specialty and way of working and most importantly they are all certified professional trainers.</p>
@@ -73,17 +76,17 @@
                             <img src="./assets/student2/pexels-ron-lach-8745169.jpg" alt="Workout1" class="img-fluid">
                         </div>
                     </div>
-                    <div class="row align-items-center">
+                    <div class="row align-items-center" data-aos="fade-left">
                         <div class="col-md-6">
                             <img src="./assets/student2/pexels-ron-lach-8745179.jpg" alt="Workout2" class="img-fluid">
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-6 pb-3">
                             <h3>Expert guidance</h3>
                             <p>A personal trainer has a deep understanding of exercise science, nutrition, and the human body, and can provide customized workout plans that take into account each client's fitness level, goals, and physical limitations. They can also teach proper form and technique to ensure clients exercise safely and effectively.</p>
                         </div>
                     </div>
-                    <div class="row align-items-center">
-                        <div class="col-md-6">
+                    <div class="row align-items-center" data-aos="fade-right">
+                        <div class="col-md-6 pt-3">
                             <h3>Motivation and accountability</h3>
                             <p>Personal trainers help clients stay motivated and accountable by pushing them to work harder and stay on track with their fitness goals. This is especially helpful for those who are new to exercise or struggle to stay motivated on their own.</p>
                         </div>
@@ -91,7 +94,7 @@
                             <img src="./assets/student2/pexels-cliff-booth-4057847.jpg" alt="Workout3" class="img-fluid">
                         </div>
                     </div>
-                    <div class="row align-items-center">
+                    <div class="row align-items-center" data-aos="fade-left">
                         <div class="col-md-6">
                             <img src="./assets/student2/pexels-cliff-booth-4057069.jpg" alt="Workout4" class="img-fluid">
                         </div>
@@ -106,9 +109,11 @@
         </main>
 
         <!-- Get Started CTA -->
-        <section class="get-started text-center py-5">
+        <section class="get-started py-5 center-align">
             <h3 class="mb-4">Ready to achieve your fitness goals with our expert trainers?</h3>
-            <a href="/membership" class="btn">Get Started</a>
+            <a href="./membership.html" class="btn">Get Started</a>
+
+            </div>
         </section>
 
         <!-- Trainer 1 Modal -->
@@ -117,11 +122,11 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         <h5 class="modal-title" id="trainer1ModalLabel">Abel Tesfaye's Contact Info</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <button type="button" class="btn-close" da ta-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <p>Email: abel@example.com</p>
-                        <p>Phone: +1 (234) 567-8910</p>
+                        <p>Email: abeltraining@gmail.com</p>
+                        <p>Phone: +32 0466666666</p>
                     </div>
                 </div>
             </div>
@@ -135,8 +140,8 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        <p>Email: taylor@example.com</p>
-                        <p>Phone: +1 (987) 654-3210</p>
+                        <p>Email: taylortraining@gmail.com</p>
+                        <p>Phone: +32 0466666655</p>
                     </div>
                 </div>
             </div>
@@ -150,14 +155,14 @@
                             <img src="./assets/student2/Screenshot%202023-04-13%20171912.png" alt="logo" width="120">
                         </div>
                         <ul class="nav flex-lg-row flex-column  mt-3">
-                            <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">Membership</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">Classes</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">Personal Training</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">Testimonials</a></li>
+                            <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="./classes.html">Classes</a></li>
+                            <li class="nav-item"><a class="nav-link" href="./personal-trainings.html">Personal Trainings</a></li>
+                            <li class="nav-item"><a class="nav-link" href="./membership.html">Membership</a></li>
+                            <li class="nav-item"><a class="nav-link" href="./blog.html">Blog</a></li>
+                            <li class="nav-item"><a class="nav-link" href="./contact-us.html">Contact Us</a></li>
+                            <li class="nav-item"><a class="nav-link" href="./testimonials.html">Testimonials</a></li>
+                            <li class="nav-item"><a class="nav-link" href="./faq.html">FAQ</a></li>
                         </ul>
                     </div>
                     <div class="d-flex justify-content-center align-items-center">
@@ -168,12 +173,42 @@
                             <a href="#" class="me-3"><i class="fab fa-youtube"></i></a>
                         </div>
                     </div>
+                    <div class="copyright p-1 mt-5 d-flex flex-column justify-content-center align-items-center w-auto">
+                        <p class="fs-4">Author: Francesco Chrabieh</p>
+                        <p class="text-secondary">&copy; 2023 ThomasMore</p>
+                    </div>
                 </div>
             </div>
         </footer>
-
+        <div class="menu">
+            <nav class="menu-nav">
+                <div class="d-flex justify-content-between align-items-center menu-header w-100">
+                    <h3>Menu</h3>
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+                <ul class="d-flex d-lg-none list-unstyled">
+                    <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./classes.html">Classes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./personal-trainings.html">Personal Trainings</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./membership.html">Membership</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./blog.html">Blog</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./contact-us.html">Contact Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./testimonials.html">Testimonials</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./faq.html">FAQ</a></li>
+                </ul>
+            </nav>
+            <div class='overlay'></div>
+        </div>
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="./js/bootstrap.bundle.min.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script src="./js/main.js"></script>
+
+        <script>
+            AOS.init();
+        </script>
+        <script src="./js/student2page2.js"></script>
     </body>
+
+
 </html>

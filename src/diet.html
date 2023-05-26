@@ -4,8 +4,9 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="author" content="Dominykas" />
-        <title>About Us | Powerup Fitness</title>
+        <title>Diets | Powerup Fitness</title>
         <link rel="stylesheet" href="./css/style.css" type="text/css" />
+        <link rel="icon" type="image/x-icon" href="/assets/Favicon/favicon-32x32.png" />
     </head>
     <body class="student4">
         <header class="header">
@@ -20,7 +21,7 @@
                     <li><a href="/diet.html">Diets</a></li>
                     <li><a href="/contact-us.html">Contact us</a></li>
                     <li><a href="/testimonials.html">Testimonials</a></li>
-                    <li><a href="/faq.html">Faq</a></li>
+                    <li><a href="/faq.html">FAQ</a></li>
                 </ul>
                 <div class="burger-icon">
                     <i class="fa-solid fa-bars"></i>
@@ -119,90 +120,120 @@
                     </div>
                 </div>
             </section>
-            <section class="">
-                <div class="container">
-                    <h2 class="text-center my-4">Personalised training programmes</h2>
+            <div class="container">
+                <div class="py-3 row">
+                    <div class="col-4 text-center"><button class="tab-button p-2 me-2" id="button1">Programs</button></div>
+                    <div class="col-4 text-center"><button class="tab-button p-2" id="button2">Body-Types</button></div>
+                    <div class="col-4 text-center"><button class="tab-button p-2" id="button3">BMI calculator</button></div>
                 </div>
-                <div>
-                    <p class="text-center">
-                        We're here to help you reach your health and fitness goals, no matter what they may be. Our experienced trainers and
-                        supportive community are dedicated to helping you feel your best and achieve your fullest potential. Join us today
-                        and let's start your fitness journey together!
-                    </p>
-                </div>
-                <div class="row">
-                    <p>Generally there are three main body types:</p>
-                    <img src="/assets/student4/body_types.jpg" alt="types of body" />
-                </div>
-            </section>
-            <section class="text-center py-3">
-                <button type="button" class="join-button btn">JOIN NOW</button>
-            </section>
-            <div class="bmi-calculator my-3">
-                <h2>BMI Calculator</h2>
-                <div>
-                    <label for="height">Height (cm):</label>
-                    <input type="number" id="height" />
-                </div>
-                <div>
-                    <label for="weight">Weight (kg):</label>
-                    <input type="number" id="weight" />
-                </div>
-                <button onclick="calculateBMI()">Calculate BMI</button>
-                <div class="result"></div>
             </div>
-            <p class="text-center">
-                Thank you for considering PowerUp Fitness as your fitness partner. We look forward to helping you achieve your best self!
-            </p>
-            <footer class="footer mt-auto py-3">
-                <div class="container">
-                    <div class="column">
-                        <div>
-                            <div class="d-flex justify-content-center align-items-center">
-                                <img src="./assets/student2/Screenshot%202023-04-13%20171912.png" alt="logo" width="120" />
+            <div>
+                <section class="diet-tab" id="training-program">
+                    <div class="container my-2">
+                        <div class="row">
+                            <div class="col-md-8 text-start">
+                                <h2 class="my-4">Personalised training programmes</h2>
+                                <p>
+                                    We're here to help you reach your health and fitness goals, no matter what they may be. Our experienced
+                                    trainers and supportive community are dedicated to helping you feel your best and achieve your fullest
+                                    potential. Join us today and let's start your fitness journey together!
+                                </p>
                             </div>
-                            <ul class="nav flex-lg-row flex-column mt-3">
-                                <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-                                <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
-                                <li class="nav-item"><a class="nav-link" href="#">Membership</a></li>
-                                <li class="nav-item"><a class="nav-link" href="#">Classes</a></li>
-                                <li class="nav-item"><a class="nav-link" href="#">Personal Training</a></li>
-                                <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
-                                <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
-                                <li class="nav-item"><a class="nav-link" href="#">Testimonials</a></li>
-                            </ul>
-                        </div>
-                        <div class="d-flex justify-content-center align-items-center">
-                            <div class="social-media-icons">
-                                <a href="#" class="me-3"><i class="fab fa-facebook"></i></a>
-                                <a href="#" class="me-3"><i class="fab fa-twitter"></i></a>
-                                <a href="#" class="me-3"><i class="fab fa-instagram"></i></a>
-                                <a href="#" class="me-3"><i class="fab fa-youtube"></i></a>
+                            <div class="col-md-4 text-center align-self-center">
+                                <form action="classes.html">
+                                    <button type="submit" class="join-button btn">See our classes</button>
+                                </form>
                             </div>
                         </div>
                     </div>
-                </div>
-            </footer>
-            <div class="menu">
-                <nav class="menu-nav">
-                    <div class="d-flex justify-content-between align-items-center menu-header w-100">
-                        <h3>Menu</h3>
-                        <i class="fa-solid fa-xmark"></i>
+                </section>
+                <section class="diet-tab text-center p-3 d-none" id="body-types">
+                    <div>
+                        <div class="row">
+                            <div class="col-md-8">
+                                <p class="text-start">
+                                    Body types, also known as somatotypes, are a way to categorize individuals based on their physical
+                                    characteristics and how their bodies tend to respond to exercise and diet. One popular classification
+                                    includes three main body types: ectomorph, mesomorph, and endomorph. It's important to note that these
+                                    categories are generalizations and that most people have a combination of characteristics from different
+                                    body types. Check BMI Calculator and join now to get personalised diets!
+                                </p>
+                            </div>
+                            <div class="col-md-4">
+                                <img src="/assets/student4/body_types.jpg" alt="types of body" class="img-fluid" />
+                            </div>
+                        </div>
                     </div>
-                    <ul class="d-flex d-lg-none list-unstyled">
-                        <li class="active"><a href="/index.html">Home</a></li>
-                        <li><a href="/about-us">About us</a></li>
-                        <li><a href="/classes">Classes</a></li>
-                        <li><a href="/personal-trainings">Personal trainings</a></li>
-                        <li><a href="/blog">Blog</a></li>
-                        <li><a href="/contact-us">Contact us</a></li>
-                        <li><a href="/membership.html">Membership</a></li>
-                        <li><a href="/faq.html">Faq</a></li>
-                    </ul>
-                </nav>
-                <div class="overlay"></div>
+                    <button type="button" class="join-button btn">JOIN NOW</button>
+                </section>
+                <section class="diet-tab my-3 d-none" id="bmi-calculator">
+                    <h2>BMI Calculator</h2>
+                    <div>
+                        <label for="height">Height (cm):</label>
+                        <input type="number" id="height" />
+                    </div>
+                    <div>
+                        <label for="weight">Weight (kg):</label>
+                        <input type="number" id="weight" />
+                    </div>
+                    <button onclick="calculateBMI()">Calculate BMI</button>
+                    <div class="result"></div>
+                </section>
             </div>
         </main>
+        <footer class="footer mt-auto py-5">
+            <div class="container">
+                <div class="column">
+                    <div>
+                        <div class="d-flex justify-content-center align-items-center">
+                            <img src="./assets/logo-white.svg" alt="logo" class="w-50" />
+                        </div>
+                        <ul class="nav flex-column justify-content-center flex-lg-row flex-xl-row my-4">
+                            <li class="nav-item"><a class="nav-link" href="/index.html">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="/classes.html">Classes</a></li>
+                            <li class="nav-item"><a class="nav-link" href="/personal-trainings.html">Personal trainings</a></li>
+                            <li class="nav-item"><a class="nav-link" href="/membership.html">Membership</a></li>
+                            <li class="nav-item"><a class="nav-link" href="/blog.htm">Blog</a></li>
+                            <li class="nav-item"><a class="nav-link" href="/diet.html">Diets</a></li>
+                            <li class="nav-item"><a class="nav-link" href="/contact-us.html">Contact us</a></li>
+                            <li class="nav-item"><a class="nav-link" href="/testimanials.html">Testimonials</a></li>
+                            <li class="nav-item"><a class="nav-link" href="/faq.html">FAQ</a></li>
+                        </ul>
+                    </div>
+                    <div class="d-flex justify-content-center align-items-center">
+                        <div class="social-media-icons">
+                            <a href="#" class="me-3"><i class="fab fa-facebook"></i></a>
+                            <a href="#" class="me-3"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="me-3"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="me-3"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="disclaimer text-end pb-0">
+                <p>&copy; Dominykas Raila - Thomas More. The page is fictitious and made for educational purposes</p>
+            </div>
+        </footer>
+        <div class="menu">
+            <nav class="menu-nav">
+                <div class="d-flex justify-content-between align-items-center menu-header w-100">
+                    <h3>Menu</h3>
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+                <ul class="d-flex d-lg-none list-unstyled">
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/classes.html">Classes</a></li>
+                    <li><a href="/personal-trainings.html">Personal trainings</a></li>
+                    <li><a href="/membership.html">Membership</a></li>
+                    <li><a href="/blog.htm">Blog</a></li>
+                    <li><a href="/diet.html">Diets</a></li>
+                    <li><a href="/contact-us.html">Contact us</a></li>
+                    <li><a href="/testimonials.html">Testimonials</a></li>
+                    <li><a href="/faq.html">FAQ</a></li>
+                </ul>
+            </nav>
+            <div class="overlay"></div>
+        </div>
         <script src="js/student4page1.js"></script>
         <script src="js/bootstrap.bundle.min.js"></script>
         <script src="js/main.js"></script>

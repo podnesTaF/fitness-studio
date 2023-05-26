@@ -1,0 +1,249 @@
+//<<<<<<< HEAD
+//@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+//
+//body {
+//  font-family: 'Arial', sans-serif;
+//}
+$primary-color: #FDBF2C;
+
+.student2 {
+
+
+  .header {
+    background: url('../assets/student2/pexels-pavel-danilyuk-6339346.jpg') no-repeat center center/cover;
+    &.header2{
+      background: url('../assets/student2/pexels-pixabay-414029.jpg') no-repeat center center/cover;
+    }
+  }
+  .custom-z-index{
+    z-index: 3;
+  }
+
+
+  .trainers {
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+
+    h2 {
+      margin-bottom: 2rem;
+    }
+
+    img {
+      width: 60%;
+      height: auto;
+      margin-bottom: 1rem;
+    }
+
+    .contact-btn {
+      background: none;
+      border: none;
+      color: white;
+      font-size: 1rem;
+      cursor: pointer;
+      text-decoration: underline;
+      transition: color .3s;
+
+      &:hover {
+        color: darken($primary-color, 10%);
+      }
+    }
+  }
+
+
+  .workouts {
+    margin-bottom: 4rem;
+
+    h3 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1rem;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+      margin-bottom: 2rem;
+    }
+  }
+
+  .center-align{
+    text-align: center;
+  }
+
+  .group-classes {
+    text-align: center;
+
+    h1 {
+      font-size: 3rem;
+    }
+
+    .card {
+      text-align: left;
+      margin-bottom: 2rem;
+    }
+  }
+
+  .members-experiences {
+    text-align: center;
+
+    h1 {
+      font-size: 3rem;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+ .text-center{
+  text-align: left !important;
+ }
+  .get-started {
+
+    h3 {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .btn {
+      font-size: 1.2rem;
+      padding: 0.75rem 1.5rem;
+      background-color: $primary-color;
+      color: #fff;
+
+    }
+  }
+  .btn {
+    font-size: 1.2rem;
+    padding: 0.75rem 1.5rem;
+    background-color: $primary-color;
+    color: #fff;
+  }
+
+  .classes-desc{
+    min-height: 250px;
+  }
+
+  .pics{
+    height: 250px;
+    object-position: center;
+    object-fit: cover;
+  }
+  .pics1{
+    height: 250px;
+    object-position: bottom;
+    object-fit: cover;
+  }
+
+  .footer {
+    background-color: #333;
+    color: white;
+
+    .nav-link {
+      color: white;
+
+      &::after {
+        content: '';
+        display: block;
+        width: 0;
+        height: 2px;
+        background: $primary-color;
+        transition: width .3s;
+      }
+
+      &:hover::after {
+        width: 100%;
+      }
+    }
+
+    .social-media-icons {
+      font-size: 1.5rem;
+
+      i {
+        color: white;
+        transition: color .3s;
+      }
+
+      a:hover i {
+        color: $primary-color;
+      }
+    }
+  }
+
+  .members-experiences {
+    .img-fluid {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      margin: 0 !important;
+    }
+
+    .col-md-6 {
+      &:first-child {
+        .img-fluid {
+          height: 400px;
+
+        }
+      }
+
+      &:last-child {
+        .col-md-6 {
+          .img-fluid {
+            height: 200px;
+          }
+        }
+      }
+    }
+  }
+
+  .color-button {
+    background-color: white !important;
+  }
+
+  @media (max-width: 576px) {
+    .pics1{
+      object-position: center;
+      height: 350px;
+    }
+    .pics{
+      height: 350px;
+    }
+    .header-content {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    .members-experiences .row {
+      flex-direction: column;
+
+      img {
+        margin-bottom: 1rem;
+
+      }
+    }
+    .footer {
+      .nav {
+        margin-bottom: 2rem;
+      }
+    }
+  }
+
+  .carousel-item img {
+    height: 400px;  /* Adjust as needed */
+    object-fit: contain;
+  }
+  .carousel-control-next-icon,
+  .carousel-control-prev-icon {
+    background-color: black;
+  }
+
+
+
+  .grclasses {
+    color: white;
+  }
+
+}

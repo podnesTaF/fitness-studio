@@ -73,6 +73,11 @@
       box-shadow: 0 0 7px rgba(0, 0, 0, 0.3);
       opacity: 0.6;
       transform: scale(0.7);
+      .image-carousel {
+        width: 5rem;
+        height: 5rem;
+        border-radius: 50%;
+      }
       .item-header {
         display: flex;
         width: 100%;

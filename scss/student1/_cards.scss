@@ -20,6 +20,14 @@
       background: url("../assets/student1/membership1.jpg") no-repeat center center/cover;
       background-size: 120%;
 
+      &.card1 {
+        background-image: url("../assets/student1/card1.jpg")
+      }
+
+      &.card2 {
+        background-image: url("../assets/student1/card2.jpg")
+      }
+
       .card-img-overlay {
         transition: all 800ms cubic-bezier(0.19, 1, 0.22, 1);
         border-radius: 20px;

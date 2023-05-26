@@ -176,11 +176,6 @@
         object-fit: cover;
         object-position: center;
       }
-      @each $box, $grid-area in $box-styles {
-        &.#{$box} {
-          grid-area: $grid-area;
-        }
-      }
       &.a {
         grid-area: 1 / 1 / 2 / 6;
       }

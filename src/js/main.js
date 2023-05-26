@@ -1,6 +1,19 @@
+// Author: Oleksii Pidnebesnyi r0934777
+
 const nav = document.querySelector('.nav');
-const links = document.querySelectorAll('.nav ul li a')
+const links = document.querySelectorAll('.nav ul li a');
 const navLogo = document.querySelector('.nav__logo');
+
+
+// slow down intro video if located in index.html
+const slowDownVideo = () => {
+    const introVideo = document.querySelector('.fixed-video');
+    introVideo.playbackRate = 0.8;
+};
+
+if(location.pathname === '/index.html') {
+    slowDownVideo();
+}
 
 // handle active link
 const path = window.location.pathname.split('/').pop();

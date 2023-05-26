@@ -1,2 +1,2 @@
 Put assets from student1 in this folder
-Name:
+Name: Oleksii Pidnebesnyi r0934777
